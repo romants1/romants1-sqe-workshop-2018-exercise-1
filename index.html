@@ -18,6 +18,19 @@
                 width: 80%;
                 height: 95%;
             }
+            th, td, p, input {
+                font:14px Verdana;
+            }
+            table, th, td
+            {
+                border: solid 1px #DDD;
+                border-collapse: collapse;
+                padding: 2px 3px;
+                text-align: center;
+            }
+            th {
+                font-weight:bold;
+            }
         </style>
     </head>
     <body>
@@ -30,7 +43,7 @@
                 </td>
                 <td>
                     <div>
-                        <label>Parsed code here</label>
+                        <label>Parsed code table here</label>
                     </div>
                 </td>
             </tr>
@@ -42,14 +55,16 @@
                 </td>
                 <td>
                     <div class="textAreaWrapper">
-                        <textarea id="parsedCode" title="Parse code"></textarea>
+                        <!--<textarea id="parsedCode" title="Parse code"></textarea>-->
+                        <table id="table1"> </table>
                     </div>
+
                 </td>
             </tr>
             <tr>
                 <td>
                     <div>
-                        <button id="codeSubmissionButton">Parse code</button>
+                        <button id="codeSubmissionButton">Create Table</button>
                     </div>
                 </td>
                 <td>
